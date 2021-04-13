@@ -6,7 +6,7 @@ div {
 body {
     display: flex;
     flex-direction: column;
-    background-color: #A089F5;
+    background-color: white;
 }
 
 img {
@@ -23,10 +23,10 @@ img {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    background-color: #A089F5;
+    background-color: white;
 }
 
-.card {
+.card { /* We Trello now, boys */
     border-radius: 5px;
     border: #DEF7E1;
     width: 600px;
@@ -34,19 +34,23 @@ img {
 }
 
 #links {
+    border-radius: 10px;
     display: flex;
+    overflow: hidden;
     align-items: center;
     justify-content: center;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    background-color: #66bd5c;
+    /* Colorzilla does a great job with gradients, but that wasn't the vibe */
 }
 
 #header {
     display: flex;
     flex-direction: column;
-    background-color: deeppink;
+    background-color: transparent;
     font-family: 'Ubuntu', sans-serif;
     height: 200px;
     align-items: center;
