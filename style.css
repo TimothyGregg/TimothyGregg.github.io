@@ -1,41 +1,46 @@
 div {
+    display: flex;
     border: black;
     border-style: solid;
+    align-items: center; /* Vertical */
+    justify-content: center; /* Horizontal */
 }
 
 body {
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: transparent;
+    font-family: 'Ubuntu', sans-serif;
+
+    /* This applies a min width */
+    min-width: 650px; /* TODO make this actually work */
+    width: auto !important;
+    width: 650px;
 }
 
-img {
-    border: 5px solid #555;
-  }
-
 .button {
-    border: none;
-    color: white;
     /* padding: 15px 32px; */
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    /* margin: 4px 2px; */
     cursor: pointer;
-    background-color: white;
+    height: 50px;
+    background-color: transparent;
 }
 
 .card { /* We Trello now, boys */
-    border-radius: 5px;
-    border: #DEF7E1;
+    border-radius: 10px;
+    flex: 0 0 auto; 
     width: 600px;
     height: 700px;
+    align-items: center;
+    justify-content: center;
 }
 
 #links {
-    border-radius: 10px;
-    display: flex;
+    /* border-radius: 10px; */
     overflow: hidden;
     align-items: center;
     justify-content: center;
@@ -43,30 +48,7 @@ img {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #66bd5c;
+    /* background-color: #66bd5c; */
+    opacity: 0.5;
     /* Colorzilla does a great job with gradients, but that wasn't the vibe */
-}
-
-#header {
-    display: flex;
-    flex-direction: column;
-    background-color: transparent;
-    font-family: 'Ubuntu', sans-serif;
-    height: 200px;
-    align-items: center;
-    justify-content: center;
-    color: black;
-}
-
-#profile {
-    display: flex;
-    flex-direction: row;
-    font-family: 'Ubuntu', sans-serif;
-    align-items: center;
-    justify-content: center;
-}
-
-#details {
-    display: flex;
-    flex-direction: column;
 }
