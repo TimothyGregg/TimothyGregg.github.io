@@ -8,7 +8,8 @@ div {
 
 body {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: flex-start;
     background-color: transparent;
     font-family: 'Ubuntu', sans-serif;
 
@@ -16,6 +17,8 @@ body {
     min-width: 650px; /* TODO make this actually work */
     width: auto !important;
     width: 650px;
+    direction: rtl;
+    position: relative;
 }
 
 .button {
@@ -32,6 +35,7 @@ body {
 
 .card { /* We Trello now, boys */
     border-radius: 10px;
+    margin: 85px 85px;
     flex: 0 0 auto; 
     width: 600px;
     height: 700px;
@@ -42,13 +46,36 @@ body {
 #links {
     /* border-radius: 10px; */
     overflow: hidden;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     /* background-color: #66bd5c; */
     opacity: 0.5;
     /* Colorzilla does a great job with gradients, but that wasn't the vibe */
+}
+
+#content {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    position: absolute;
+    right: 450px;
+}
+
+#cards {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-basis: auto;
+    width: 100%;
+}
+
+#constant {
+    width: 450px;
+    min-width: 450px;
+    flex-basis: 450px;
+    height: 100%;
+    position: absolute;
 }
