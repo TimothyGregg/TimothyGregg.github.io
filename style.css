@@ -15,6 +15,7 @@ body {
 
     /* This applies a min width */
     min-width: 650px; /* TODO make this actually work */
+    min-height: 100vh;
     width: auto !important;
     width: 650px;
     direction: rtl;
@@ -35,10 +36,10 @@ body {
 
 .card { /* We Trello now, boys */
     border-radius: 10px;
-    margin: 85px 85px;
+    margin: 45px 45px;
     flex: 0 0 auto; 
-    width: 600px;
-    height: 700px;
+    width: 400px;
+    height: 500px;
     align-items: center;
     justify-content: center;
 }
@@ -76,6 +77,8 @@ body {
     width: 450px;
     min-width: 450px;
     flex-basis: 450px;
+    min-height: 100%;
     height: 100%;
     position: absolute;
+    overflow: hidden;
 }
